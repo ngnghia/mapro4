@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteHomepage]" parallel="tests">
+  <test name="Testgoogle">
+    <classes>
+      <class name="pk1.Mavenpro4.google"/>
+    </classes>
+  </test> <!-- Testgoogle -->
+  <test name="Testgoogle(failed)" parallel="tests">
+    <classes>
+      <class name="pk1.Mavenpro4.google">
+        <methods>
+          <include name="testEasy2"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- pk1.Mavenpro4.google -->
+    </classes>
+  </test> <!-- Testgoogle(failed) -->
+</suite> <!-- Failed suite [SuiteHomepage] -->
